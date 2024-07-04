@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 1em;
+    width:353px;
+    height: 143px;
+}
+#manual{
+    width:100%;
+    font-size: 2.5em;
+    color:#79a12f;
+    font-family:Helvetica;
+    margin-top: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+.answer{
+    text-decoration: none;
+    font-size: 1.3em;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 4px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
+       
+}
+.answer:hover{
+    background-color: #79a12f;
+}
+.answer:active{
+        background-color: yellow;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.margin-top{
+    margin-top: 50px;
+}
+.block-margin-top{
+    margin-top: 10px;
+}
+.margin-right{
+    margin-right: 10px;
+}
+.margin-bottom{
+    margin-bottom: 70px;
+}
+.flex-row-sb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.round-image{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+
+}
+.add-round-button{
+    position: relative;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .subtract-round-button{
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        border: none;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+.add-button{
+    background-color: #a0f108;
+    
+    }
+.add-button:hover{
+    background-color: #79a12f;
+}
+.subtract-button{
+    background-color: #ff0000;
+    
+    }
+.subtract-button:hover{
+    background-color: #bd0f0f;
+}
+.subtract-button-text{
+    font-size: 550%;
+    color: white;
+    margin-top:-108%;
+    margin-left: -4%;
+    }
+.add-button-text{
+font-size: 550%;
+color: white;
+margin-top:-50%;
+margin-left: -3%;
+}
+.add-button-text span{
+z-index:10;display:none; padding:14px 20px;
+width:300px; line-height:17px; font-size: 20px;
+}
+.add-button-text:hover span{
+    display:block;
+      position:absolute;
+      bottom: -3.5em;
+      left: 0;
+      color:#000000;
+    }
+
+.hide{
+    display: none;
+
+}
+.left-width{
+    margin-left: 5%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right-width{
+    margin-right: 5%;
+    width: 50%;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.bg-green{
+    background-color: rgba(121, 161, 47, 0.4);
+    color:rgba(12, 108, 140);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.bg-blue{
+    background-color:rgba(12, 108, 140, 0.6);
+    color:rgb(243, 246, 247);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.iniciar{
+    font-size: 2em;
+    padding: 30px;
+    
+
+}
+.w70{
+    width: 70%;
+}
+.table-title{
+    padding-left:20px;
+    padding-right: 20px
+}
+.table-line{
+    background-color: white;
+    text-align: center;
+}
