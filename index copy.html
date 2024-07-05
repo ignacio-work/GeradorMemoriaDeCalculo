@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #body{
+        margin-left: 50px;
+        margin-bottom: 50px;
+        background-color: aliceblue;
+    }
+    
+    .logo{
+        cursor: pointer;
+        margin-top: 1em;
+        width:353px;
+        height: 143px;
+    }
+    #manual{
+        width:100%;
+        font-size: 2.5em;
+        color:#79a12f;
+        font-family:Helvetica;
+        margin-top: 0.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+    .answer{
+        text-decoration: none;
+        font-size: 1.3em;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 4px;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 0.7);
+           
+    }
+    .answer:hover{
+        background-color: #79a12f;
+    }
+    .answer:active{
+            background-color: yellow;
+    
+    }
+    
+    .flex-center{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin-top{
+        margin-top: 50px;
+    }
+    .block-margin-top{
+        margin-top: 10px;
+    }
+    .margin-right{
+        margin-right: 10px;
+    }
+    .margin-bottom{
+        margin-bottom: 70px;
+    }
+    .flex-row-sb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .round-image{
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+    
+    }
+    .add-round-button{
+        position: relative;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        border: none;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .subtract-round-button{
+            width:30px;
+            height:30px;
+            border-radius: 50%;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+    .add-button{
+        background-color: #a0f108;
+        
+        }
+    .add-button:hover{
+        background-color: #79a12f;
+    }
+    .subtract-button{
+        background-color: #ff0000;
+        
+        }
+    .subtract-button:hover{
+        background-color: #bd0f0f;
+    }
+    .subtract-button-text{
+        font-size: 550%;
+        color: white;
+        margin-top:-108%;
+        margin-left: -4%;
+        }
+    .add-button-text{
+    font-size: 550%;
+    color: white;
+    margin-top:-50%;
+    margin-left: -3%;
+    }
+    .add-button-text span{
+    z-index:10;display:none; padding:14px 20px;
+    width:300px; line-height:17px; font-size: 20px;
+    }
+    .add-button-text:hover span{
+        display:block;
+          position:absolute;
+          bottom: -3.5em;
+          left: 0;
+          color:#000000;
+        }
+    
+    .hide{
+        display: none;
+    
+    }
+    .left-width{
+        margin-left: 5%;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .right-width{
+        margin-right: 5%;
+        width: 50%;
+        text-align: center;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+    .bg-green{
+        background-color: rgba(121, 161, 47, 0.4);
+        color:rgba(12, 108, 140);
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    .bg-blue{
+        background-color:rgba(12, 108, 140, 0.6);
+        color:rgb(243, 246, 247);
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    .iniciar{
+        font-size: 2em;
+        padding: 30px;
+        
+    
+    }
+    .w70{
+        width: 70%;
+    }
+    .table-title{
+        padding-left:20px;
+        padding-right: 20px
+    }
+    .table-line{
+        background-color: white;
+        text-align: center;
+    }</style>
+    <title>Gerador de memória de cálculo</title>
+</head>
+
+<body id="body">
+    <section>
+        <div id="cabecalho" class="flex-row-sb">
+            <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Ans.logo.png"
+                    alt="Logo da ANS" class="logo" />
+            </a>
+            <div id="manual">
+                <div class="margin-top">
+                    <p>
+                        <strong>Gerador de memória de cálculo para formulários do Ressarcimento ao SUS</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tabela-reajuste" class="margin-top margin-right flex-center margin-bottom">
+        <div class="flex-column">
+            <div>
+                <h2 class="flex-center">Cálculo de reajuste de coparticipação</h2>
+            </div>
+            <div class="flex-row-sb">
+                <div class="flex-column margin-right">
+                    <label for="competencia">Competência do atendimento</label>
+                    <input id="competencia" type="month" name="competencia" />
+                    </div>
+                    <div class="flex-column">
+                        <label>Data da assinatura do contrato</label>
+                        <input id="dtAssinatura" name="dtAssinatura" type="date"> </input>
+                    </div>
+                </div>
+                <div id="tabela-reajuste-coparticipacao" style="display: none">
+                    <div>
+                        <table class="block-margin-top">
+                            <tr class="bg-blue table-title">
+                                <th class="table-title">Ano</th>
+                                <th class="table-title">Percentual aplicado</th>
+                                <th class="table-title">índice de reajuste</th>
+                                <th class="table-title">índice acumulado</th>
+                                <th class="table-title" style="width: 40%;">Observações</th>
+                                <th class="table-title">Excluir linha</th>
+                            </tr>
+                            <!--As linhas da tabela devem ser acrescidas dinamicamente com javascript-->
+                        </table>
+                    </div>
+                    <div class="flex-center block-margin-top">
+                        <button id="adicionar-linha-reajuste-coparticipacao" type="submit" class="add-round-button add-button">
+                            <div class="add-button-text">+<span>Adiciona uma linha a tabela de memória de cálculo</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="tabela-coparticipação" class="margin-top margin-right flex-center">
+        <div class="flex-column">
+            <div>
+                <h2 class="flex-center">Cálculo da coparticipação</h2>
+            </div>
+            <div>
+                <table class="block-margin-top margin-right">
+                    <tr class="bg-blue table-title">
+                        <th class="table-title">Procedimento</th>
+                        <th class="table-title">Valor por procedimento</th>
+                        <th class="table-title">quantidade</th>
+                        <th class="table-title">Coparticipação em percentual ou valor fixo?</th>
+                        <th class="table-title">Há limite/teto de Coparticipação?</th>
+                        <th class="table-title">Valor limite da coparticipação por procedimento</th>
+                        <th class="table-title">Percentual ou valor de coparticipação</th>
+                        <th class="table-title">Índice acumulado de reajuste da coparticipação</th>
+                        <th class="table-title">Cláusula contratual da coparticipação</th>
+                        <th class="table-title">Desconto total solicitado</th>
+                        <th class="table-title">Excluir linha</th>
+
+                    </tr>
+                    <!--As linhas da tabela devem ser acrescidas dinamicamente com javascript-->
+                </table>
+            </div>
+            <div class="flex-center block-margin-top">
+                <button type="submit" class="add-round-button add-button">
+                    <div class="add-button-text">+<span>Adiciona uma linha a tabela de memória de cálculo</span></div>
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script></script>
+</body>
+
+</html>
