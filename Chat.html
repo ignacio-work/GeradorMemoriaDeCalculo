@@ -6,35 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        #body{
+
+        #body {
             margin-left: 50px;
             margin-bottom: 50px;
             background-color: aliceblue;
         }
-        
-        .logo{
+
+        .logo {
             cursor: pointer;
             margin-top: 1em;
-            width:353px;
+            width: 353px;
             height: 143px;
         }
-        #manual{
-            width:100%;
+
+        #manual {
+            width: 100%;
             font-size: 2.5em;
-            color:#79a12f;
-            font-family:Helvetica;
+            color: #79a12f;
+            font-family: Helvetica;
             margin-top: 0.3em;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;   
+            text-align: center;
         }
-        .answer{
+
+        .answer {
             text-decoration: none;
             font-size: 1.3em;
             border-style: solid;
@@ -42,115 +45,139 @@
             padding: 4px;
             color: whitesmoke;
             background-color: rgba(0, 0, 0, 0.7);
-               
+
         }
-        .answer:hover{
+
+        .answer:hover {
             background-color: #79a12f;
         }
-        .answer:active{
-                background-color: yellow;
-        
+
+        .answer:active {
+            background-color: yellow;
+
         }
-        
-        .flex-center{
+
+        .flex-center {
             display: flex;
             justify-content: center;
             align-content: center;
             justify-items: center;
             justify-content: center;
         }
-        .flex-column{
+
+        .flex-column {
             display: flex;
             flex-direction: column;
         }
-        .margin-top{
+
+        .margin-top {
             margin-top: 50px;
         }
-        .block-margin-top{
+
+        .block-margin-top {
             margin-top: 10px;
         }
-        .margin-right{
+
+        .margin-right {
             margin-right: 10px;
         }
-        .margin-bottom{
+
+        .margin-bottom {
             margin-bottom: 70px;
         }
-        .flex-row-sb{
+
+        .flex-row-sb {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 10px;
         }
-        .round-image{
-            width:150px;
-            height:150px;
+
+        .round-image {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-        
+
         }
-        .add-round-button{
+
+        .add-round-button {
             position: relative;
-            width:40px;
-            height:40px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             border: none;
             text-align: center;
             display: inline-block;
             cursor: pointer;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            }
-            .subtract-round-button{
-                width:30px;
-                height:30px;
-                border-radius: 50%;
-                border: none;
-                text-align: center;
-                display: inline-block;
-                cursor: pointer;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-                }
-        .add-button{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .subtract-round-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .add-button {
             background-color: #a0f108;
-            
-            }
-        .add-button:hover{
+
+        }
+
+        .add-button:hover {
             background-color: #79a12f;
         }
-        .subtract-button{
+
+        .subtract-button {
             background-color: #ff0000;
-            
-            }
-        .subtract-button:hover{
+
+        }
+
+        .subtract-button:hover {
             background-color: #bd0f0f;
         }
-        .subtract-button-text{
+
+        .subtract-button-text {
             font-size: 550%;
             color: white;
-            margin-top:-108%;
+            margin-top: -108%;
             margin-left: -4%;
-            }
-        .add-button-text{
-        font-size: 550%;
-        color: white;
-        margin-top:-50%;
-        margin-left: -3%;
         }
-        .add-button-text span{
-        z-index:10;display:none; padding:14px 20px;
-        width:300px; line-height:17px; font-size: 20px;
+
+        .add-button-text {
+            font-size: 550%;
+            color: white;
+            margin-top: -50%;
+            margin-left: -3%;
         }
-        .add-button-text:hover span{
-            display:block;
-              position:absolute;
-              bottom: -3.5em;
-              left: 0;
-              color:#000000;
-            }
-        
-        .hide{
+
+        .add-button-text span {
+            z-index: 10;
             display: none;
-        
+            padding: 14px 20px;
+            width: 300px;
+            line-height: 17px;
+            font-size: 20px;
         }
-        .left-width{
+
+        .add-button-text:hover span {
+            display: block;
+            position: absolute;
+            bottom: -3.5em;
+            left: 0;
+            color: #000000;
+        }
+
+        .hide {
+            display: none;
+
+        }
+
+        .left-width {
             margin-left: 5%;
             width: 50%;
             text-align: center;
@@ -158,7 +185,8 @@
             align-items: center;
             justify-content: flex-start;
         }
-        .right-width{
+
+        .right-width {
             margin-right: 5%;
             width: 50%;
             text-align: center;
@@ -166,35 +194,42 @@
             display: flex;
             align-items: center;
         }
-        .bg-green{
+
+        .bg-green {
             background-color: rgba(121, 161, 47, 0.4);
-            color:rgba(12, 108, 140);
+            color: rgba(12, 108, 140);
             font-weight: 700;
             font-size: 1.2em;
         }
-        .bg-blue{
-            background-color:rgba(12, 108, 140, 0.6);
-            color:rgb(243, 246, 247);
+
+        .bg-blue {
+            background-color: rgba(12, 108, 140, 0.6);
+            color: rgb(243, 246, 247);
             font-weight: 700;
             font-size: 1.2em;
         }
-        .iniciar{
+
+        .iniciar {
             font-size: 2em;
             padding: 30px;
-            
-        
+
+
         }
-        .w70{
+
+        .w70 {
             width: 70%;
         }
-        .table-title{
-            padding-left:20px;
+
+        .table-title {
+            padding-left: 20px;
             padding-right: 20px
         }
-        .table-line{
+
+        .table-line {
             background-color: white;
             text-align: center;
-        }</style>
+        }
+    </style>
     <title>Gerador de memória de cálculo</title>
 </head>
 
@@ -202,7 +237,8 @@
     <section>
         <div id="cabecalho" class="flex-row-sb">
             <a href="index.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Ans.logo.png" alt="Logo da ANS" class="logo" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Ans.logo.png" alt="Logo da ANS"
+                    class="logo" />
             </a>
             <div id="manual">
                 <div class="margin-top">
@@ -228,11 +264,6 @@
                     <input id="dtAssinatura" name="dtAssinatura" type="date"> </input>
                 </div>
             </div>
-            <div class="flex-center block-margin-top">
-                <button id="mostrar-tabela" type="button">
-                    <div>Mostrar Tabela</div>
-                </button>
-            </div>
             <div id="tabela-reajuste-coparticipacao" style="display: none">
                 <div>
                     <table class="block-margin-top">
@@ -248,40 +279,62 @@
                     </table>
                 </div>
                 <div class="flex-center block-margin-top">
-                    <button id="adicionar-linha-reajuste-coparticipacao" type="button" class="add-round-button add-button">
-                        <div class="add-button-text">+<span>Adiciona uma linha à tabela de memória de cálculo</span></div>
+                    <button id="adicionar-linha-reajuste-coparticipacao" type="button"
+                        class="add-round-button add-button">
+                        <div class="add-button-text">+<span>Adiciona uma linha à tabela de memória de cálculo</span>
+                        </div>
                     </button>
                 </div>
             </div>
         </div>
     </section>
     <script>
-        document.getElementById('mostrar-tabela').addEventListener('input', function () {
+        const linhasDaPlanilhaDeReajuste = []
+        let numeroDaLinha = 1
+        function showOrHide(){
+            console.log(`i am working`)
             const competencia = document.getElementById('competencia').value;
+            console.log(competencia)
             const dtAssinatura = document.getElementById('dtAssinatura').value;
+            console.log(dtAssinatura)
 
-            if (!competencia || !dtAssinatura) {
-                alert('Por favor, preencha a competência do atendimento e a data de assinatura do contrato.');
-                return;
+            if (competencia && dtAssinatura) {
+
+                const [competenciaAno, competenciaMes] = competencia.split('-');
+                const assinaturaDate = new Date(dtAssinatura);
+                const atendimentoDate = new Date(competenciaAno, competenciaMes - 1);
+
+                const dadosContrato = {
+                    competenciaAno: parseInt(competenciaAno),
+                    competenciaMes: parseInt(competenciaMes),
+                    assinaturaAno: assinaturaDate.getFullYear(),
+                    assinaturaMes: assinaturaDate.getMonth() + 1
+                };
+                if (dadosContrato.assinaturaAno > 1900 && dadosContrato.competenciaAno > 1900) {
+
+                    document.getElementById('tabela-reajuste-coparticipacao').style.display = 'block';
+                } else { document.getElementById('tabela-reajuste-coparticipacao').style.display = 'none'; }
             }
-
-            const [competenciaAno, competenciaMes] = competencia.split('-');
-            const assinaturaDate = new Date(dtAssinatura);
-            const atendimentoDate = new Date(competenciaAno, competenciaMes - 1);
-
-            const dadosContrato = {
-                competenciaAno: parseInt(competenciaAno),
-                competenciaMes: parseInt(competenciaMes),
-                assinaturaAno: assinaturaDate.getFullYear(),
-                assinaturaMes: assinaturaDate.getMonth() + 1
-            };
-
-            document.getElementById('tabela-reajuste-coparticipacao').style.display = 'block';
-        });
+        }
+        document.getElementById(`competencia`).addEventListener('input', showOrHide);
+        document.getElementById(`dtAssinatura`).addEventListener('input', showOrHide);
 
         document.getElementById('adicionar-linha-reajuste-coparticipacao').addEventListener('click', function () {
+            numeroDaLinha+=1;
+            linhasDaPlanilhaDeReajuste.push({
+            numeroDestaLinha: numeroDaLinha,
+            ano:"",
+            percentual:"",
+            indiceDeReajuste:"1",
+            indiceAcumulado:"",
+            anteriorAoContrato:false,
+            posteriorAoAtendimento:false,
+            })
+            console.log(linhasDaPlanilhaDeReajuste)
             const tabela = document.querySelector('#tabela-reajuste-coparticipacao table');
+            
             const novaLinha = document.createElement('tr');
+            novaLinha.setAttribute("id",`linnha${numeroDaLinha}`)
 
             novaLinha.innerHTML = `
                 <td class="table-line"><input type="number" class="ano-reajuste"></td>
@@ -302,7 +355,7 @@
 
             novaLinha.querySelector('.percentual-aplicado').addEventListener('input', function () {
                 const percentual = parseFloat(this.value) / 100 + 1;
-                novaLinha.querySelector('.indice-reajuste').textContent = percentual.toFixed(2);
+                novaLinha.querySelector('.indice-reajuste').textContent = percentual.toFixed(4);
                 calcularIndiceAcumulado();
             });
 
@@ -322,12 +375,12 @@
                 const percentual = parseFloat(linha.querySelector('.percentual-aplicado').value) / 100 + 1;
 
                 if (!isNaN(ano) && !isNaN(percentual)) {
-                    linha.querySelector('.indice-reajuste').textContent = percentual.toFixed(2);
+                    linha.querySelector('.indice-reajuste').textContent = percentual.toFixed(4);
                     const observacao = linha.querySelector('.observacoes').textContent;
                     if (observacao === 'Ok') {
                         indiceAcumulado *= percentual;
                     }
-                    linha.querySelector('.indice-acumulado').textContent = indiceAcumulado.toFixed(2);
+                    linha.querySelector('.indice-acumulado').textContent = indiceAcumulado.toFixed(4);
                 }
             });
         }
